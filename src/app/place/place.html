@@ -1,0 +1,108 @@
+<div class="min-h-screen  flex items-center justify-center bg-amber-100/15 p-0 ">
+  <!-- Tarjeta contenedora con un ancho máximo de lectura móvil -->
+  <div class="relative m-0  w-full overflow-hidden font-serif text-slate-800 flex flex-col">
+
+    <!-- ================= MANCHAS AZULES DE FONDO ================= -->
+    <!-- Mancha superior izquierda -->
+    <div class="absolute top-[-10%] left-[-15%] w-80 h-80 rounded-full bg-blue-200/60 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha lateral derecha intermedia -->
+    <div class="absolute top-[35%] right-[-15%] w-96 h-96 rounded-full bg-indigo-200/50 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha inferior izquierda -->
+    <div class="absolute bottom-[10%] left-[-10%] w-72 h-72 rounded-full bg-blue-100/70 blur-2xl pointer-events-none z-0"></div>
+    <!-- =========================================================== -->
+
+    <!-- Sección Superior / Encabezado -->
+    <div class="relative z-10 pb-8 flex flex-col items-center text-center px-4 pt-8">
+      <!-- Icono de ubicación -->
+      <svg class="w-12 h-12 text-slate-500 mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+      </svg>
+
+      <!-- Título en cursiva -->
+      <h1 class="font-cursive text-5xl text-slate-600 leading-tight">
+        Dónde Celebraremos
+      </h1>
+    </div>
+
+    <!-- Imagen del Salón -->
+    <div class="w-full p-3 h-56 overflow-hidden relative z-10">
+      <img
+        src="assets/place/Salon.jpg"
+        alt="Salón Bahías Palmeras"
+        class="w-full h-full object-cover rounded-2xl"
+      />
+    </div>
+
+    <!-- Sección de Información -->
+    <div class="flex-1 px-6 pt-10 pb-20 flex flex-col items-center text-center relative z-10">
+
+      <!-- Nombre del Salón -->
+      <h2 class="text-xl tracking-wider font-semibold text-slate-700 uppercase mb-2">
+        Salón Bahías Palmeras
+      </h2>
+
+      <!-- Divisor con Corazón -->
+      <div class="flex items-center w-28 justify-center gap-2 mb-6">
+        <span class="h-px w-full bg-slate-200"></span>
+        <span class="text-slate-400 text-xs">♥</span>
+        <span class="h-px w-full bg-slate-200"></span>
+      </div>
+
+      <!-- Recepción -->
+      <div class="mb-6">
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-sans font-semibold mb-1">
+          Recepción
+        </p>
+        <p class="text-base font-semibold text-slate-700">
+          04:00 PM
+        </p>
+      </div>
+
+      <!-- Dirección -->
+      <div class="mb-10">
+        <p class="text-xs uppercase tracking-widest text-slate-400 font-sans font-semibold mb-1">
+          Dirección
+        </p>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          San Francisco de Campeche, Campeche
+          <br />
+          <span class="text-xs font-sans text-slate-500">Carr. Campeche-Lerma 203, 24030</span>
+        </p>
+      </div>
+
+      <!-- Botón de Ver Mapa -->
+      <a
+        href="https://maps.app.goo.gl/HuJAp9V62gJH42mV9?g_st=iw"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center gap-2 bg-[#557395] hover:bg-[#435b77] text-white px-8 py-3 rounded-full text-xs uppercase tracking-widest font-semibold transition-colors shadow-sm z-20"
+      >
+        <!-- Icono de mapa -->
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.446l-5.217-2.61a1.5 1.5 0 00-1.342 0L3.73 17.528A.75.75 0 012.75 16.85V5.19c0-.285.16-.547.412-.673l5.03-2.515a1.5 1.5 0 011.342 0l5.03 2.515c.253.126.412.388.412.673v11.66c0 .285-.16.547-.412.673l-5.03 2.515z" />
+        </svg>
+        Ver Mapa
+      </a>
+
+    </div>
+
+    <!-- Imágenes de flores decorativas en las esquinas -->
+    <img
+      src="assets/place/4.png"
+      alt="Decoración floral"
+      style="transform: rotate(-60deg);"
+      class="absolute -bottom-12 -right-10 w-40 h-auto pointer-events-none z-10 opacity-90"
+    />
+
+    <img
+      src="assets/place/4.png"
+      alt="Decoración floral"
+      style="transform: rotate(30deg);"
+      class="absolute -bottom-12 -left-10 w-40 h-auto pointer-events-none z-10 opacity-90"
+    />
+
+  </div>
+</div>

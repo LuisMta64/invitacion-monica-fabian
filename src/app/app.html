@@ -1,0 +1,76 @@
+<div style="background-image: url('../assets/fondo_web.jpg'); background-size: cover;" class="relative flex justify-center items-center content-center overflow-x-hidden h-dvh w-full bg-[#ffffff] overflow-hidden select-none">
+
+  <!-- Capa trasera: Contenido principal -->
+  @if (contentVisible) {
+    <div class="absolute m-auto max-w-3xl flex flex-col items-center overflow-x-hidden bg-[#ffffff] border-white inset-0 z-10 p-0  overflow-y-scroll animate-pageIn">
+      <app-main-screen class="block border-white w-full"></app-main-screen>
+
+      <div class="absolute -left-45 top-[115%] w-100 sm:w-44 z-60 pointer-events-none">
+        <img src="assets/second-screen/flor.png" alt="Flores decorativas superiores" class="opacity-95 object-contain" />
+      </div>
+
+      <div class="absolute -right-45 top-[115%] w-100 sm:w-44 z-60 pointer-events-none">
+        <img style="transform: rotate(180deg)  scaleY(-1);" src="assets/second-screen/flor.png" alt="Flores decorativas superiores" class="opacity-95 object-contain" />
+      </div>
+
+
+      <app-second-section class="block border-white  w-full"></app-second-section>
+      <app-place class="block border-white  w-full"></app-place>
+      <app-itinerario class="block border-white  w-full"></app-itinerario>
+      <app-regalos class="block border-white  w-full"></app-regalos>
+      <app-recuerdos class="block border-white  w-full"></app-recuerdos>
+    </div>
+  }
+
+  <!-- Capa delantera -->
+  @if (envelopeVisible) {
+    <div #envelopeContainer class="absolute inset-0 z-50 flex items-center justify-center bg-[#cfdae3] overflow-hidden">
+
+      <div class="relative w-[92%] min-w-full max-w-full h-full bg-[#b2c4d0ee] rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] overflow-hidden flex flex-col justify-between">
+
+        <div class="absolute inset-x-0 top-0 h-[64%] z-30 pointer-events-none" style="filter: drop-shadow(5px 12px 20px rgba(0, 0, 0, 0.24));">
+          <!--  Superior -->
+          <div #topFlap
+               class="w-full h-full bg-[#b2c4d0] flex flex-col items-center justify-start pt-12 pointer-events-auto"
+               style="clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%); transform-origin: top center;">
+            <div class="absolute inset-0 bg-linear-to-b from-white/50 to-black/10 pointer-events-none"></div>
+
+            <!-- Iniciales -->
+            <div class="relative select-none pointer-events-none opacity-80 mt-32 font-playfair flex items-center justify-center h-40 w-40">
+              <span class="absolute text-8xl font-light italic text-[#2c475c] -translate-x-3.75 -translate-y-2.5">M</span>
+              <span class="absolute text-8xl font-light italic text-[#2c475c] translate-x-3.75 translate-y-5.5">F</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inferior -->
+        <div #bottomFlap
+             class="absolute inset-x-0 bottom-0 h-[53%] bg-[#a5b8c5] z-20"
+             style="clip-path: polygon(0 100%, 100% 100%, 100% 28%, 50% 0, 0 28%); transform-origin: bottom center; filter: drop-shadow(5px 12px 20px rgba(0, 0, 0, 0.24)) !important;">
+          <div class="absolute inset-0 bg-linear-to-t from-black/10 to-white/10 pointer-events-none"></div>
+        </div>
+
+        <!-- Botón-->
+        <button #seal
+                (click)="startOpeningSequence()"
+                class="absolute z-40 cursor-pointer focus:outline-none select-none transition-transform duration-300 hover:scale-105"
+                style="left: 50%; top: 58%; transform: translate(-50%, -50%);">
+          <div class="w-32 h-32 rounded-[48%_52%_50%_50%/_50%_48%_52%_50%] bg-[#9eb2c2] flex items-center justify-center shadow-[0_10px_20px_rgba(0,0,0,0.15),inset_0_2px_4px_rgba(255,255,255,0.4),inset_0_-3px_6px_rgba(0,0,0,0.2)] border border-[#a2b6c5]/30 relative active:scale-95 transition-transform">
+
+            <!-- Anillo -->
+            <div class="absolute inset-2 rounded-full border border-[#899dae]/40 pointer-events-none"></div>
+
+             <img src="./../assets/logo/36091.svg" class="w-24 h-24" alt="">
+          </div>
+        </button>
+
+        <div #instruction class="absolute bottom-6 left-0 w-full text-center text-[#31465a] text-[13px] tracking-[0.35em] uppercase animate-pulse z-40 pointer-events-none">
+          Haz clic para abrir
+        </div>
+
+      </div>
+
+    </div>
+  }
+
+</div>

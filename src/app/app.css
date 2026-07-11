@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Efecto suave de entrada para el contenido interior de la invitación */
+.animate-pageIn {
+  animation: pageFadeIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Permitir efectos 3D fluidos en los elementos del sobre */
+#envelopeContainer {
+  perspective: 1200px;
+}
+

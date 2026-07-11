@@ -1,0 +1,100 @@
+<!-- Contenedor externo: Centra la tarjeta en pantallas de escritorio y cubre la pantalla en móviles -->
+<div class="min-h-screen bg-amber-100/15 flex items-center justify-center p-0 sm:p-6">
+
+  <!-- Tarjeta Principal (Diseño responsivo optimizado) -->
+  <div
+    class="relative w-full max-w-3xl min-h-screen  sm:h-[90vh]  text-[#2c3e50]  sm:rounded-3xl overflow-hidden  flex flex-col justify-between select-none">
+
+    <!-- 1. FLORES DECORATIVAS (FONDO) -->
+    <!-- Flor Izquierda -->
+    <div class="absolute -left-6 top-[36%] w-50 sm:w-44 z-20 pointer-events-none">
+      <img src="assets/main-screen/flores-left.png" alt="Flores decorativas izquierdas"
+        class="opacity-95 object-contain" />
+    </div>
+
+    <!-- Flor Derecha Inferior -->
+    <div class="absolute -right-7 w-40 sm:w-32 z-10 pointer-events-none">
+      <img style="transform: rotate(180deg);" src="assets/main-screen/flores-left.png" alt="Flores decorativas derechas"
+        class="opacity-80 object-contain" />
+    </div>
+
+
+    <!-- Flor Derecha Inferior -->
+    <!-- <div class="absolute bottom-0 right-0 w-70 sm:w-32 z-20 pointer-events-none">
+      <img src="assets/main-screen/fondo-acuarela.png" alt="Flores decorativas derechas" class="object-contain" />
+    </div> -->
+
+    <!-- 2. LOGO PRINCIPAL (POSICIÓN ABSOLUTA SUPERIOR) -->
+    <div class="absolute left-1/2 -translate-x-1/2 z-34 w-40 h-40 flex items-center justify-center">
+      <img src="assets/main-screen/logo.png" alt="M | F Logo" class="object-contain max-h-full" />
+    </div>
+
+    <!-- 3. IMAGEN PRINCIPAL (CON DEGRADADOS CORTOS Y SUAVES EN LOS EXTREMOS) -->
+    <div class="relative w-full h-150  z-0 overflow-hidden">
+      <img src="assets/main-screen/main2.png" alt="Mónica y Fabian" class="w-full h-full object-cover object-center" />
+
+      <div class="absolute inset-x-0 top-0 h-30 bg-linear-to-b from-white/90 to-transparent z-10"></div>
+
+      <div class="absolute inset-x-0 bottom-0 h-45 bg-linear-to-t from-[#fbf9f2] o-transparent z-10"></div>
+    </div>
+
+    <div class=" flex relative flex-col items-center text-center z-10 px-6  grow justify-center">
+      <div class="  flex relative flex-col items-center text-center z-20 -top-30">
+        <h1 class="font-script text-7xl sm:text-6xl text-[#1e3d59] leading-none font-light">
+          Mónica
+        </h1>
+        <span class="font-serif-elegant text-4xl sm:text-3xl italic text-[#1e3d59] my-1">&</span>
+        <h1 class="font-script text-7xl sm:text-6xl text-[#1e3d59] leading-none font-light">
+          Fabian
+        </h1>
+
+
+
+
+        <p class="font-sans-clean tracking-[0.25em] text-[17px] sm:text-xs font-semibold text-[#1e3d59] mt-6 uppercase">
+          Nos Casamos
+        </p>
+        <!-- Detalle del corazón -->
+        <div class="text-[#1e3d59] my-1 text-lg">♥</div>
+        <!-- Fecha -->
+        <div class="font-serif-elegant text-[#1e3d59] mt-1">
+          <div class="text-4xl sm:text-3xl tracking-widest font-light">
+            24 <span class="text-xl">.</span> 10 <span class="text-xl">.</span> 2026
+          </div>
+          <div class="font-sans-clean text-[13px] sm:text-[10px] tracking-[0.3em] font-medium uppercase mt-1">
+            Sábado
+          </div>
+        </div>
+
+        <!-- 5. SECCIÓN CONTADOR (COUNTDOWN) -->
+        <div class="z-20 p-8">
+          <!-- Línea divisoria superior -->
+          <div class="border-t border-gray-300/60 w-full mb-3"></div>
+
+          <!-- Números del contador -->
+          <div class="grid grid-cols-4 gap-9 text-center font-serif-elegant text-[#1e3d59]">
+            <div>
+              <span class="block text-2xl sm:text-3xl font-light tracking-wide">{{ days() }}</span>
+              <span class="font-sans-clean text-[10px] sm:text-[9px] tracking-wider uppercase text-gray-400">Días</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-light tracking-wide">{{ hours() }}</span>
+              <span class="font-sans-clean text-[10px] sm:text-[9px] tracking-wider uppercase text-gray-400">Horas</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-light tracking-wide">{{ minutes() }}</span>
+              <span class="font-sans-clean text-[10px] sm:text-[9px] tracking-wider uppercase text-gray-400">Min</span>
+            </div>
+            <div>
+              <span class="block text-2xl sm:text-3xl font-light tracking-wide">{{ seconds() }}</span>
+              <span class="font-sans-clean text-[10px] sm:text-[9px] tracking-wider uppercase text-gray-400">Seg</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

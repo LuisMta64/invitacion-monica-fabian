@@ -1,0 +1,184 @@
+<div class="min-h-screen  flex items-center justify-center bg-amber-100/15 p-0">
+  <!-- Tarjeta contenedora -->
+  <div class="relative m-0 max-w-4xl w-full  overflow-hidden font-serif text-slate-800 flex flex-col py-12 px-6">
+
+    <!-- ================= MANCHAS ÍNDIGO DE FONDO ================= -->
+    <!-- Mancha superior derecha -->
+    <div class="absolute top-[5%] right-[-10%] w-80 h-80 rounded-full bg-indigo-100 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha lateral izquierda -->
+    <div class="absolute top-[55%] left-[-15%] w-70 h-70 rounded-full bg-indigo-200/70 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha inferior derecha -->
+    <!-- <div class="absolute bottom-[-5%] right-[-5%] w-80 h-80 rounded-full bg-indigo-100 blur-3xl pointer-events-none z-0"></div> -->
+    <!-- =========================================================== -->
+
+    <!-- Encabezado -->
+    <div class="relative z-10 flex flex-col items-center text-center pb-4">
+      <h1 class="font-cursive text-6xl text-slate-600 leading-tight">
+        Itinerario
+      </h1>
+
+      <!-- Divisor Superior -->
+      <div class="flex items-center w-28 justify-center gap-2 mt-2">
+        <span class="h-px w-full bg-slate-200"></span>
+        <span class="text-slate-400 text-xs">♥</span>
+        <span class="h-px w-full bg-slate-200"></span>
+      </div>
+    </div>
+
+    <!-- Contenedor del Cronograma / Timeline -->
+    <div class="relative z-10 max-w-md mx-auto w-full flex flex-col my-8">
+
+      <!-- ITEM 1: Llegada al salón -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+          </svg>
+        </div>
+        <!-- Centro: Línea y Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+          <div class="absolute top-2.5 w-px bg-slate-300 h-[calc(100%+2rem)]"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">4:00 PM</p>
+          <p class="text-base text-slate-700 font-medium">Llegada al salón</p>
+        </div>
+      </div>
+
+      <!-- ITEM 2: Boda Civil -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 15a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.5 15a4.5 4.5 0 100-9 4.5 4.5 0 000 9z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 6V4.5l1-1-1-1-1 1 1 1" />
+          </svg>
+        </div>
+        <!-- Centro: Línea y Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+          <div class="absolute top-2.5 w-px bg-slate-300 h-[calc(100%+2rem)]"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">4:30 PM</p>
+          <p class="text-base text-slate-700 font-medium">Boda Civil</p>
+        </div>
+      </div>
+
+      <!-- ITEM 3: Comida -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8 3v7a2 2 0 002 2h0a2 2 0 002-2V3M10 3v5M16 3v17M16 3a3 3 0 013 3v6h-3V3z" />
+          </svg>
+        </div>
+        <!-- Centro: Línea y Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+          <div class="absolute top-2.5 w-px bg-slate-300 h-[calc(100%+2rem)]"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">6:00 PM</p>
+          <p class="text-base text-slate-700 font-medium">Comida</p>
+        </div>
+      </div>
+
+      <!-- ITEM 4: Brindis -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M7 6l-2 8h5l-2-8z M8 14v4M6 18h4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17 6l2 8h-5l2-8z M16 14v4M14 18h4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 4v2M10 5l1 1M14 5l-1 1" stroke-linecap="round" />
+          </svg>
+        </div>
+        <!-- Centro: Línea y Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+          <div class="absolute top-2.5 w-px bg-slate-300 h-[calc(100%+2rem)]"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">7:00 PM</p>
+          <p class="text-base text-slate-700 font-medium">Brindis</p>
+        </div>
+      </div>
+
+      <!-- ITEM 5: Fiesta -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 10l12-3M9 19a3 3 0 11-6 0 3 3 0 016 0zm12-3a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+        </div>
+        <!-- Centro: Línea y Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+          <div class="absolute top-2.5 w-px bg-slate-300 h-[calc(100%+2rem)]"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">8:00 PM</p>
+          <p class="text-base text-slate-700 font-medium">Fiesta</p>
+        </div>
+      </div>
+
+      <!-- ITEM 6: Término (Último elemento sin línea inferior) -->
+      <div class="relative flex items-center justify-between gap-4 py-4">
+        <!-- Izquierda: Icono -->
+        <div class="w-1/3 flex justify-end text-[#557395]">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 12l-8 8M12 12V3M12 12h9M12 12L6 6M12 12l6 6M12 12l8-8M12 12l-6 6" />
+          </svg>
+        </div>
+        <!-- Centro: Solo Punto -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="w-2.5 h-2.5 rounded-full bg-[#557395] z-10"></div>
+        </div>
+        <!-- Derecha: Información -->
+        <div class="w-1/2 text-left">
+          <p class="text-sm font-semibold text-slate-500 font-sans">11:00 PM</p>
+          <p class="text-base text-slate-700 font-medium">Término</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Divisor Inferior -->
+    <div class="relative z-10 flex items-center w-28 mx-auto justify-center gap-2 pt-4">
+      <span class="h-px w-full bg-slate-200"></span>
+      <span class="text-slate-400 text-xs">♥</span>
+      <span class="h-px w-full bg-slate-200"></span>
+    </div>
+
+    <!-- ================= ELEMENTOS FLORALES ================= -->
+    <!-- Flor superior izquierda -->
+    <img
+      src="assets/main-screen/flores-left.png"
+      alt="Decoración floral superior"
+      class="absolute top-10 -left-8 w-44 h-auto pointer-events-none z-10 opacity-90"
+    />
+
+    <!-- Flor inferior derecha -->
+    <img
+      src="assets/main-screen/flores-left.png"
+      alt="Decoración floral inferior"
+      style="transform: rotate(180deg);"
+      class="absolute -bottom-3 -right-12 w-48 h-auto pointer-events-none z-10 opacity-90"
+    />
+    <!-- ====================================================== -->
+
+  </div>
+</div>

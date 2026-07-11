@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* Aplicamos las fuentes importadas */
+.font-cursive {
+  font-family: 'Alex Brush', cursive;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}

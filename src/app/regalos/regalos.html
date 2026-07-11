@@ -1,0 +1,121 @@
+<div class="min-h-screen bg-amber-100/15 p-0 flex items-center justify-center">
+  <!-- Tarjeta contenedora -->
+  <div class="relative m-0 max-w-4xl w-full  overflow-hidden font-serif text-slate-800 flex flex-col py-12 px-6">
+
+    <!-- ================= MANCHAS ÍNDIGO DE FONDO ================= -->
+    <!-- Mancha superior izquierda -->
+    <div class="absolute top-[15%] left-[-10%] w-80 h-80 rounded-full bg-indigo-100/40 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha inferior izquierda -->
+    <div class="absolute bottom-[20%] left-[-15%] w-96 h-96 rounded-full bg-indigo-50/50 blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Mancha inferior derecha -->
+    <div class="absolute bottom-[-39%] right-[-5%] w-80 h-80 rounded-full bg-indigo-100/40 blur-3xl pointer-events-none z-0"></div>
+    <!-- =========================================================== -->
+
+    <!-- Icono y Título Principal -->
+    <div class="relative mt-10 z-10 flex flex-col items-center text-center pb-6">
+      <!-- Icono de Caja de Regalo -->
+      <svg class="w-10 h-10 text-slate-500 mb-2" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25H3V20.25a1.5 1.5 0 001.5 1.5h15a1.5 1.5 0 001.5-1.5v-9M21 7.5H3V11.25h18V7.5zm-9-3.75V21.75m0-18C12 2.5 10.5 1.5 9 1.5s-3 1-3 2.25 2.5 1.5 3 0m3 0c0-1.25 1.5-2.25 3-2.25s3 1 3 2.25-2.5 1.5-3 0" />
+      </svg>
+
+      <!-- Título en cursiva -->
+      <h1 class="font-cursive text-6xl text-slate-600 leading-tight">
+        Mesa de Regalos
+      </h1>
+
+      <!-- Divisor con Corazón -->
+      <div class="flex items-center w-28 justify-center gap-2 mt-2">
+        <span class="h-px w-full bg-slate-200"></span>
+        <span class="text-slate-400 text-xs">♥</span>
+        <span class="h-px w-full bg-slate-200"></span>
+      </div>
+    </div>
+
+    <!-- Párrafo de Agradecimiento -->
+    <div class="relative z-10 max-w-md mx-auto text-center px-4 mb-8">
+      <p class="text-sm text-slate-600 leading-relaxed font-serif">
+        Tu compañía es el mejor regalo que podemos recibir, pero si deseas darnos un obsequio, agradecemos tu generosidad el día de la boda, o si es de tu preferencia realizar un presente en efectivo, puedes hacerlo a la cuenta:
+      </p>
+    </div>
+
+    <!-- Tarjeta con Datos de Cuenta (Efecto Acuarela Pastel) -->
+    <div class="relative z-10 mb-26 max-w-md w-full mx-auto bg-linear-to-br from-slate-100/90 to-blue-50/95 border border-blue-100/40 rounded-3xl p-8 overflow-hidden shadow-xs">
+
+      <!-- Pequeñas manchas internas para simular el papel acuarela -->
+      <div class="absolute -right-10 -top-10 w-40 h-40 rounded-full bg-blue-200/20 blur-2xl pointer-events-none"></div>
+      <div class="absolute -left-10 -bottom-10 w-40 h-40 rounded-full bg-indigo-200/20 blur-2xl pointer-events-none"></div>
+
+      <!-- Título de la tarjeta interna -->
+      <h2 class="relative z-10 text-xs uppercase tracking-widest text-slate-500 font-sans font-bold text-center mb-6">
+        Datos de la Cuenta
+      </h2>
+
+      <!-- Fila: Banco -->
+      <div class="relative z-10 mb-5">
+        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Banco</p>
+        <p class="text-base text-slate-700 font-medium">Santander</p>
+      </div>
+
+      <!-- Fila: Beneficiario -->
+      <div class="relative z-10 mb-5">
+        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Beneficiario</p>
+        <p class="text-base text-slate-700 font-medium">Monica Gabriela Mata Ruiz</p>
+      </div>
+
+      <!-- Fila: Tarjeta + Botón Copiar -->
+      <div class="relative z-10 mb-5 flex items-end justify-between gap-4">
+        <div>
+          <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Tarjeta</p>
+          <p class="text-base text-slate-700 font-mono tracking-wider font-semibold">•••• •••• •••• 1234</p>
+        </div>
+        <button
+          (click)="copyToClipboard('1234123412341234', 'card')"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 bg-white/90 border border-slate-200 text-slate-600 rounded-full text-xs font-semibold hover:bg-white hover:text-slate-800 transition-colors shadow-xs"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M16.5 7.5h.75a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-.75" />
+          </svg>
+          <span class="font-sans">{{ cardCopied ? 'Copiado' : 'Copiar' }}</span>
+        </button>
+      </div>
+
+      <!-- Fila: Clabe + Botón Copiar -->
+      <div class="relative z-10  flex items-end justify-between gap-4">
+        <div>
+          <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Clabe</p>
+          <p class="text-sm text-slate-700 font-mono tracking-wider font-semibold">0140 5460 1234 5678 90</p>
+        </div>
+        <button
+          (click)="copyToClipboard('014054601234567890', 'clabe')"
+          class="flex items-center gap-1.5 px-3.5 py-1.5 bg-white/90 border border-slate-200 text-slate-600 rounded-full text-xs font-semibold hover:bg-white hover:text-slate-800 transition-colors shadow-xs"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M16.5 7.5h.75a2.25 2.25 0 012.25 2.25v10.5a2.25 2.25 0 01-2.25 2.25h-.75" />
+          </svg>
+          <span class="font-sans">{{ clabeCopied ? 'Copiado' : 'Copiar' }}</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- ================= ELEMENTOS FLORALES ================= -->
+    <!-- Flor inferior derecha -->
+    <img
+      src="assets/regalos/flor.png"
+      alt="Decoración floral inferior"
+      style="transform: rotate(-10deg);"
+      class="absolute bottom-0 -right-16 w-80 h-auto pointer-events-none z-10 opacity-90"
+    />
+
+    <img
+      src="assets/recuerdos/flores.png"
+      alt="Decoración floral inferior"
+      style="transform: rotate(-90deg)  scaleY(-1); "
+      class="absolute -top-35 -left-35 w-45 h-auto pointer-events-none z-10 opacity-90"
+    />
+    <!-- ====================================================== -->
+
+  </div>
+</div>
