@@ -7,10 +7,11 @@ import { Place } from './place/place';
 import { Itinerario } from './itinerario/itinerario';
 import { Regalos } from './regalos/regalos';
 import { Recuerdos } from './recuerdos/recuerdos';
+import { Confirmacion } from './confirmacion/confirmacion';
 
 @Component({
   selector: 'app-root',
-  imports: [MainScreen, SecondSection, Place, Itinerario, Regalos, Recuerdos],
+  imports: [MainScreen, SecondSection, Place, Itinerario, Regalos, Recuerdos, Confirmacion],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

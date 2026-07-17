@@ -36,7 +36,10 @@
     <!-- Párrafo de Agradecimiento -->
     <div class="relative z-10 max-w-md mx-auto text-center px-4 mb-8">
       <p class="text-sm text-slate-600 leading-relaxed font-serif">
-        Tu compañía es el mejor regalo que podemos recibir, pero si deseas darnos un obsequio, agradecemos tu generosidad el día de la boda, o si es de tu preferencia realizar un presente en efectivo, puedes hacerlo a la cuenta:
+        Tu compañía y cariño es el mejor regalo que podemos recibir. <br> 🤍 <br>
+
+        Si además deseas tener un detalle con nosotros, agradeceremos mucho tu generosidad. Debido a que celebraremos nuestra boda fuera de nuestro estado de residencia, puedes enviarnos cualquier presente a la dirección que compartimos a continuación o, si lo prefieres, realizar un obsequio en efectivo a nuestra cuenta.
+
       </p>
     </div>
 
@@ -55,7 +58,7 @@
       <!-- Fila: Banco -->
       <div class="relative z-10 mb-5">
         <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Banco</p>
-        <p class="text-base text-slate-700 font-medium">Santander</p>
+        <p class="text-base text-slate-700 font-medium">Mercado Pago</p>
       </div>
 
       <!-- Fila: Beneficiario -->
@@ -65,7 +68,7 @@
       </div>
 
       <!-- Fila: Tarjeta + Botón Copiar -->
-      <div class="relative z-10 mb-5 flex items-end justify-between gap-4">
+      <!-- <div class="relative z-10 mb-5 flex items-end justify-between gap-4">
         <div>
           <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Tarjeta</p>
           <p class="text-base text-slate-700 font-mono tracking-wider font-semibold">•••• •••• •••• 1234</p>
@@ -79,13 +82,13 @@
           </svg>
           <span class="font-sans">{{ cardCopied ? 'Copiado' : 'Copiar' }}</span>
         </button>
-      </div>
+      </div> -->
 
       <!-- Fila: Clabe + Botón Copiar -->
       <div class="relative z-10  flex items-end justify-between gap-4">
         <div>
           <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Clabe</p>
-          <p class="text-sm text-slate-700 font-mono tracking-wider font-semibold">0140 5460 1234 5678 90</p>
+          <p class="text-sm text-slate-700 font-mono tracking-wider font-semibold">722969016747033617</p>
         </div>
         <button
           (click)="copyToClipboard('014054601234567890', 'clabe')"
@@ -96,6 +99,12 @@
           </svg>
           <span class="font-sans">{{ clabeCopied ? 'Copiado' : 'Copiar' }}</span>
         </button>
+      </div>
+
+
+      <div class="relative z-10 mb-5">
+        <p class="text-[10px] uppercase tracking-wider text-slate-400 font-sans font-bold mb-0.5">Direccion: </p>
+        <p class="text-base text-slate-700 font-medium">Maria Dolores Jimenez I.Muro 211, Fracc: Mujeres Ilustres, CP: 20299 <br> Aguascalientes, Ags.</p>
       </div>
 
     </div>
