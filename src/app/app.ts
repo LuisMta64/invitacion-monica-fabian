@@ -23,7 +23,7 @@ export class App {
   @ViewChild('instruction') instruction!: ElementRef;
 
   router = inject(Router);
-  audio = new Audio('assets/fondomusic.mp3');
+  audio = new Audio('../assets/fondomusic.mp3');
   private route = inject(ActivatedRoute);
 
   contentVisible = false;
@@ -85,7 +85,7 @@ export class App {
 
     // Reproducción de audio opcional
     this.audio.loop = true;
-    this.audio.volume = 0.4;
+    this.audio.volume = 0.3;
     this.audio.play().catch(err => {
       console.log("La reproducción automática de audio requiere interacción previa del usuario:", err);
     });
