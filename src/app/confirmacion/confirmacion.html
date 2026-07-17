@@ -91,8 +91,41 @@
       </div>
     } @else {
       <!-- Formulario manual con diseño similar si no hay ID o coincidencia -->
-      <div class="relative z-10 flex flex-col items-center justify-center my-6 w-full max-w-xs mx-auto">
-        <label class="text-xs uppercase tracking-[0.2em] text-slate-500 font-sans font-bold mb-3">
+      <div class="relative z-10 flex flex-col items-center justify-center mb-6 w-full max-w-xs mx-auto">
+
+        <div class="flex items-center justify-center gap-6">
+          <!-- Rama izquierda -->
+          <!-- <svg class="w-6 h-14 text-amber-600/50" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+            <path d="M12 22V6" stroke-linecap="round" />
+            <path d="M12 18c-3-1-4-3-4-3s2-1 4 0M12 14c-3-1-4-3-4-3s2-1 4 0M12 10c-3-1-4-3-4-3s2-1 4 0" stroke-linecap="round"/>
+            <path d="M12 16c3-1 4-3 4-3s-2-1-4 0M12 12c3-1 4-3 4-3s-2-1-4 0M12 8c3-1 4-3 4-3s-2-1-4 0" stroke-linecap="round"/>
+          </svg> -->
+
+          <!-- Número de pases -->
+          <p class="text-8xl my-2 font-serif text-[#3e5975] leading-none select-none">
+            {{ pasesIfNot ?? 1 }}
+          </p>
+
+          <!-- Rama derecha -->
+          <!-- <svg class="w-6 h-14 text-amber-600/50 scale-x-[-1]" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+            <path d="M12 22V6" stroke-linecap="round" />
+            <path d="M12 18c-3-1-4-3-4-3s2-1 4 0M12 14c-3-1-4-3-4-3s2-1 4 0M12 10c-3-1-4-3-4-3s2-1 4 0" stroke-linecap="round"/>
+            <path d="M12 16c3-1 4-3 4-3s-2-1-4 0M12 12c3-1 4-3 4-3s-2-1-4 0M12 8c3-1 4-3 4-3s-2-1-4 0" stroke-linecap="round"/>
+          </svg> -->
+        </div>
+
+        <!-- Textos de pases -->
+        <p class="font-cursive text-4xl text-slate-500 -mt-2 leading-none">
+          pases
+        </p>
+        <p class="text-xs uppercase tracking-[0.25em] text-slate-500 font-sans font-bold mt-2">
+          Reservados
+        </p>
+
+
+
+
+        <label class="text-xs uppercase tracking-[0.2em] text-slate-500 font-sans font-bold my-3">
           Introduce tu nombre completo
         </label>
         <input
@@ -138,18 +171,18 @@
     <!-- ================= ELEMENTOS FLORALES ================= -->
     <!-- Flor superior izquierda -->
     <img
-      src="assets/place/top-left-flower.png"
+      src="assets/second-screen/flor.png"
       alt="Decoración floral superior"
-      style="transform: rotate(10deg);"
-      class="absolute -top-12 -left-12 w-48 h-auto pointer-events-none z-10 opacity-90"
+      style="transform: rotate(-20deg);"
+      class="absolute -top-16 -left-32 w-86 h-auto pointer-events-none z-10 opacity-90"
     />
 
     <!-- Flor inferior derecha -->
     <img
-      src="assets/place/bottom-right-flower.png"
+      src="assets/second-screen/flor.png"
       alt="Decoración floral inferior"
-      style="transform: rotate(-10deg);"
-      class="absolute -bottom-12 -right-12 w-52 h-auto pointer-events-none z-10 opacity-90"
+      style="transform: rotate(180deg);"
+      class="absolute -bottom-22 -right-26 w-80 h-auto pointer-events-none z-10 opacity-90"
     />
     <!-- ====================================================== -->
 
