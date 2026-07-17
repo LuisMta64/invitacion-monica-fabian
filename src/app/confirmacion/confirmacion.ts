@@ -38,6 +38,7 @@ export class Confirmacion {
       params.set('name', this.invitado.invitado);
       params.set('pases', String(this.invitado.pases));
     } else {
+      if(this.manualName.trim().length == 0) return
       params.set('id', ''); // Se deja vacío si no hay invitado registrado
       params.set('name', this.manualName.trim());
       params.set('pases', this.pasesIfNot ?? '1');
