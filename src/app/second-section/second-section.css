@@ -11,3 +11,8 @@
 .font-sans-clean {
   font-family: 'Montserrat', sans-serif;
 }
+
+
+.strong-fake {
+  text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+}
