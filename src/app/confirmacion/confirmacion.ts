@@ -3,7 +3,9 @@ import { ActivatedRoute } from '@angular/router';
 import { invitados } from '../invitados';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms'; // Importante para ngModel
-
+import {
+  MatSnackBar
+} from '@angular/material/snack-bar';
 @Component({
   selector: 'app-confirmacion',
   imports: [FormsModule], // Se añade FormsModule a los imports
@@ -13,6 +15,7 @@ import { FormsModule } from '@angular/forms'; // Importante para ngModel
 export class Confirmacion {
   private route = inject(ActivatedRoute);
   private http = inject(HttpClient);
+  private _snackBar = inject(MatSnackBar);
   idInvitado: string | null = null;
   invitado?: { id: string, invitado: string, pases: number };
   manualName: string = ''; // Almacena el nombre ingresado de forma manual
@@ -48,7 +51,7 @@ export class Confirmacion {
       method: 'POST',
       mode: 'no-cors',
       body: params
-    }).then(() => console.log('Enviado (respuesta opaca, no se puede leer el contenido)'))
+    }).then(() => this._snackBar.open('Se ha confirmado tu asistencia!'))
       .catch(err => console.error('Error real de red:', err));
   }
 }
